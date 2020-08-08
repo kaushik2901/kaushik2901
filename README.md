@@ -1,4 +1,13 @@
-### Hi there 👋
+## Kaushik Jadav (@Kaushik2901)
+#### Full Stack Developer
+![](https://img.shields.io/badge/Linux-informational?style=flat&logo=linux&logoColor=white&color=dd4814)
+![](https://img.shields.io/badge/Windows-informational?style=flat&logo=windows&logoColor=white&color=000000)
+---
+![](https://img.shields.io/badge/MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=599636)
+![](https://img.shields.io/badge/Express.js-informational?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8%2BIDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI%2BPHBhdGggZD0iTTEyNi42NyA5OC40NGMtNC41NiAxLjE2LTcuMzguMDUtOS45MS0zLjc1LTUuNjgtOC41MS0xMS45NS0xNi42My0xOC0yNC45LS43OC0xLjA3LTEuNTktMi4xMi0yLjYtMy40NUM4OSA3NiA4MS44NSA4NS4yIDc1LjE0IDk0Ljc3Yy0yLjQgMy40Mi00LjkyIDQuOTEtOS40IDMuN0w5Mi42NiA2Mi4zNCA2Ny42IDI5LjcxYzQuMzEtLjg0IDcuMjktLjQxIDkuOTMgMy40NSA1LjgzIDguNTIgMTIuMjYgMTYuNjMgMTguNjcgMjUuMjFDMTAyLjY1IDQ5LjgyIDEwOSA0MS43IDExNSAzMy4yNmMyLjQxLTMuNDIgNS00LjcyIDkuMzMtMy40Ni0zLjI4IDQuMzUtNi40OSA4LjYzLTkuNzIgMTIuODgtNC4zNiA1LjczLTguNjQgMTEuNTMtMTMuMTYgMTcuMTQtMS42MSAyLTEuMzUgMy4zLjA5IDUuMTlDMTA5LjkgNzYgMTE4LjE2IDg3LjEgMTI2LjY3IDk4LjQ0ek0xLjMzIDYxLjc0Yy43Mi0zLjYxIDEuMi03LjI5IDIuMi0xMC44MyA2LTIxLjQzIDMwLjYtMzAuMzQgNDcuNS0xNy4wNkM2MC45MyA0MS42NCA2My4zOSA1Mi42MiA2Mi45IDY1SDcuMWMtLjg0IDIyLjIxIDE1LjE1IDM1LjYyIDM1LjUzIDI4Ljc4IDcuMTUtMi40IDExLjM2LTggMTMuNDctMTUgMS4wNy0zLjUxIDIuODQtNC4wNiA2LjE0LTMuMDYtMS42OSA4Ljc2LTUuNTIgMTYuMDgtMTMuNTIgMjAuNjYtMTIgNi44Ni0yOS4xMyA0LjY0LTM4LjE0LTQuODlDNS4yNiA4NS44OSAzIDc4LjkyIDIgNzEuMzljLS4xNS0xLjItLjQ2LTIuMzgtLjctMy41N1ExLjMzIDY0Ljc4IDEuMzMgNjEuNzR6TTcuMiA2MC4yNUg1Ny42M2MtLjMzLTE2LjA2LTEwLjMzLTI3LjQ3LTI0LTI3LjU3QzE4LjYzIDMyLjU2IDcuODUgNDMuNyA3LjIgNjAuMjV6Ii8%2BPC9zdmc%2B&logoColor=white&color=333)
+![](https://img.shields.io/badge/ReactJS-informational?style=flat&logo=react&logoColor=white&color=00d8ff)
+![](https://img.shields.io/badge/Node.js-informational?style=flat&logo=node.js&logoColor=white&color=333)
+
 
 <!--
 **kaushik2901/kaushik2901** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
