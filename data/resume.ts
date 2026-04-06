@@ -2,7 +2,7 @@ export const resumeData = {
   name: "Kaushik",
   role: "Senior Software Engineer",
   contact: {
-    email: "kaushik2901@gmail.com",
+    email: "kaushikjadav602@gmail.com",
     github: "https://github.com/kaushik2901",
     linkedin: "https://linkedin.com/in/kaushik2901",
     location: "Ahmedabad, India",
@@ -32,7 +32,12 @@ export const resumeData = {
     cloudAndInfrastructure: [
       "Docker",
       "NGINX",
-      "Azure (App Services, Functions, Event Grid, Storage, Application Insights, DevOps)",
+      "Azure App Services",
+      "Azure Functions",
+      "Azure Event Grid",
+      "Azure Blob Storage",
+      "Azure Application Insights",
+      "Azure DevOps",
     ],
   },
   experience: [
