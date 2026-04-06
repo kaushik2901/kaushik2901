@@ -14,8 +14,8 @@ export function Education() {
 
       <div className="space-y-4">
         {education.map((edu, index) => (
-          <Card key={index} className="rounded-md border-border/60 hover:border-border/80 transition-colors">
-            <CardContent className="pt-5 pb-4">
+          <Card key={index} className="rounded-md border-border/60 hover:border-border/80 transition-colors py-0">
+            <CardContent className="py-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                 <div className="space-y-1">
                   <h3 className="text-base font-semibold tracking-tight">{edu.institution}</h3>
