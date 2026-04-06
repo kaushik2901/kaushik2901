@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 const navItems = [
+  { label: "About", href: "#summary" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
@@ -43,19 +44,16 @@ export function StickyNav() {
   if (!isScrolled) return null;
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b print:hidden">
-      <div className="max-w-3xl mx-auto px-6 py-3 flex items-center gap-4 text-sm">
-        <a href="#top" onClick={(e) => handleClick(e, "#top")} className="font-medium hover:text-foreground text-muted-foreground transition-colors">
-          Top
-        </a>
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/50 print:hidden">
+      <div className="max-w-3xl mx-auto px-6 py-2.5 flex items-center gap-1 text-sm">
         {navItems.map((item) => (
           <a
             key={item.href}
             href={item.href}
             onClick={(e) => handleClick(e, item.href)}
             className={cn(
-              "hover:text-foreground text-muted-foreground transition-colors",
-              activeSection === item.href && "text-foreground font-medium"
+              "px-3 py-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent/50 transition-colors",
+              activeSection === item.href && "text-foreground font-medium bg-accent/50"
             )}
           >
             {item.label}

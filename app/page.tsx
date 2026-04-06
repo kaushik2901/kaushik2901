@@ -11,7 +11,7 @@ export default function ResumePage() {
   return (
     <div className="min-h-screen bg-background font-sans">
       <StickyNav />
-      <main className="max-w-3xl mx-auto px-6 py-12 space-y-2 md:py-20 lg:py-24 print:p-0 print:m-0 print:max-w-none">
+      <main className="max-w-3xl mx-auto px-6 py-12 md:py-16 lg:py-20 print:p-0 print:m-0 print:max-w-none">
         <Header />
         <Summary />
         <Experience />

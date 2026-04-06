@@ -4,9 +4,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t mt-12 text-center text-sm text-muted-foreground print:hidden">
+    <footer className="py-8 border-t border-border/50 mt-8 text-center text-xs text-muted-foreground/70 print:hidden">
       <p>
-        © {currentYear} {resumeData.name}. Built with Next.js and shadcn/ui.
+        &copy; {currentYear} {resumeData.name}. Crafted with Next.js &amp; shadcn/ui.
       </p>
     </footer>
   );
