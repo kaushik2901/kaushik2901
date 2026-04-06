@@ -1,7 +1,6 @@
 import { resumeData } from "@/data/resume";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, FolderGit2 } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { ExternalLink, FolderGit2, Link as LinkIcon } from "lucide-react";
 
 export function Projects() {
   const { projects } = resumeData;
@@ -12,39 +11,57 @@ export function Projects() {
         <FolderGit2 className="w-5 h-5 text-muted-foreground" />
         <h2 className="text-xl font-semibold tracking-tight">Projects</h2>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <div className="space-y-8">
         {projects.map((project, index) => (
-          <Card key={index} className="border-border/60 hover:border-border/80 transition-colors flex flex-col">
-            <CardHeader className="pb-3">
-              <div className="flex items-start justify-between gap-2">
-                <CardTitle className="text-base font-semibold tracking-tight leading-snug">
-                  {project.title}
-                </CardTitle>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors shrink-0 mt-0.5"
-                  aria-label={`View ${project.title} project`}
-                >
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
-              <CardDescription className="text-sm leading-relaxed line-clamp-3">
-                {project.description}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow pt-0">
-              <div className="flex flex-wrap gap-1.5">
-                {project.tech.map((tech, i) => (
-                  <Badge key={i} variant="secondary" className="text-[11px] font-medium px-2 py-0.5">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <div key={index} className="relative">
+            {index < projects.length - 1 && (
+              <div className="absolute left-6 top-12 bottom-0 w-px" />
+            )}
+            <Card className="rounded-md border-border/60 hover:border-border/80 transition-colors py-0">
+              <CardContent className="py-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-4">
+                  <div className="space-y-1">
+                    <h3 className="text-base font-semibold tracking-tight">{project.title}</h3>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0 sm:mt-1">
+                    {project.website && (
+                      <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label={`Visit ${project.title} website`}
+                      >
+                        <LinkIcon className="w-4 h-4" />
+                      </a>
+                    )}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={`View ${project.title} repository`}
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  <li className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2.5">
+                    <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-foreground/30 shrink-0" />
+                    <span>{project.description}</span>
+                  </li>
+                  {project.details && (
+                    <li className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2.5">
+                      <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-foreground/30 shrink-0" />
+                      <span>{project.details}</span>
+                    </li>
+                  )}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         ))}
       </div>
     </section>
