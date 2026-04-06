@@ -1,19 +1,25 @@
-import { Button } from "@/components/ui/button"
+import { Header } from "@/components/sections/Header";
+import { Summary } from "@/components/sections/Summary";
+import { Experience } from "@/components/sections/Experience";
+import { Projects } from "@/components/sections/Projects";
+import { Skills } from "@/components/sections/Skills";
+import { Education } from "@/components/sections/Education";
+import { Footer } from "@/components/sections/Footer";
+import { StickyNav } from "@/components/StickyNav";
 
-export default function Page() {
+export default function ResumePage() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="min-h-screen bg-background font-sans">
+      <StickyNav />
+      <main className="max-w-3xl mx-auto px-6 py-12 space-y-2 md:py-20 lg:py-24 print:p-0 print:m-0 print:max-w-none">
+        <Header />
+        <Summary />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Footer />
+      </main>
     </div>
-  )
+  );
 }
