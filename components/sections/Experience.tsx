@@ -1,7 +1,7 @@
 import { resumeData } from "@/data/resume";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, Briefcase, MapPin } from "lucide-react";
+import { RiCalendarLine, RiBriefcaseLine, RiMapPinLine } from "@remixicon/react";
 
 export function Experience() {
   const { experience } = resumeData;
@@ -9,7 +9,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-10">
       <div className="flex items-center gap-2 mb-8">
-        <Briefcase className="w-5 h-5 text-muted-foreground" />
+        <RiBriefcaseLine className="w-5 h-5 text-muted-foreground" />
         <h2 className="text-xl font-semibold tracking-tight">Professional Experience</h2>
       </div>
 
@@ -19,7 +19,7 @@ export function Experience() {
             {index < experience.length - 1 && (
               <div className="absolute left-6 top-12 bottom-0 w-px" />
             )}
-            <Card className="rounded-md border-border/60 hover:border-border/80 transition-colors py-0">
+            <Card className="transition-colors py-0">
               <CardContent className="py-4">
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
                   <div className="space-y-1">
@@ -28,12 +28,12 @@ export function Experience() {
                   </div>
                   <div className="flex flex-col sm:items-end gap-1.5 text-xs text-muted-foreground shrink-0 sm:mt-1">
                     <div className="flex items-center gap-1.5">
-                      <CalendarDays className="w-3.5 h-3.5" />
+                      <RiCalendarLine className="w-3.5 h-3.5" />
                       <span>{exp.duration}</span>
                     </div>
                     {exp.location && (
                       <div className="flex items-center gap-1.5">
-                        <MapPin className="w-3.5 h-3.5" />
+                        <RiMapPinLine className="w-3.5 h-3.5" />
                         <span>{exp.location}</span>
                       </div>
                     )}

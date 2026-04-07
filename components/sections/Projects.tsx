@@ -1,6 +1,6 @@
 import { resumeData } from "@/data/resume";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, FolderGit2, Link as LinkIcon } from "lucide-react";
+import { RiExternalLinkLine, RiGitRepositoryLine, RiLink } from "@remixicon/react";
 
 export function Projects() {
   const { projects } = resumeData;
@@ -8,7 +8,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-10">
       <div className="flex items-center gap-2 mb-8">
-        <FolderGit2 className="w-5 h-5 text-muted-foreground" />
+        <RiGitRepositoryLine className="w-5 h-5 text-muted-foreground" />
         <h2 className="text-xl font-semibold tracking-tight">Projects</h2>
       </div>
 
@@ -18,7 +18,7 @@ export function Projects() {
             {index < projects.length - 1 && (
               <div className="absolute left-6 top-12 bottom-0 w-px" />
             )}
-            <Card className="rounded-md border-border/60 hover:border-border/80 transition-colors py-0">
+            <Card className="transition-colors py-0">
               <CardContent className="py-4">
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-4">
                   <div className="space-y-1">
@@ -33,7 +33,7 @@ export function Projects() {
                         className="text-muted-foreground hover:text-foreground transition-colors"
                         aria-label={`Visit ${project.title} website`}
                       >
-                        <LinkIcon className="w-4 h-4" />
+                        <RiLink className="w-4 h-4" />
                       </a>
                     )}
                     <a
@@ -43,7 +43,7 @@ export function Projects() {
                       className="text-muted-foreground hover:text-foreground transition-colors"
                       aria-label={`View ${project.title} repository`}
                     >
-                      <ExternalLink className="w-4 h-4" />
+                      <RiExternalLinkLine className="w-4 h-4" />
                     </a>
                   </div>
                 </div>

@@ -1,12 +1,12 @@
 import { resumeData } from "@/data/resume";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Code2, Database, Cloud, Blocks } from "lucide-react";
+import { RiBrainLine, RiCodeLine, RiDatabaseLine, RiCloudLine, RiApps2Line } from "@remixicon/react";
 
 const skillIcons = {
-  systemDesign: Brain,
-  languagesAndFrameworks: Code2,
-  databases: Database,
-  cloudAndInfrastructure: Cloud,
+  systemDesign: RiBrainLine,
+  languagesAndFrameworks: RiCodeLine,
+  databases: RiDatabaseLine,
+  cloudAndInfrastructure: RiCloudLine,
 };
 
 export function Skills() {
@@ -22,7 +22,7 @@ export function Skills() {
   return (
     <section id="skills" className="py-10">
       <div className="flex items-center gap-2 mb-8">
-        <Blocks className="w-5 h-5 text-muted-foreground" />
+        <RiApps2Line className="w-5 h-5 text-muted-foreground" />
         <h2 className="text-xl font-semibold tracking-tight">Technical Skills</h2>
       </div>
 
