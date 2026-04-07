@@ -5,12 +5,10 @@ import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 import { Education } from "@/components/sections/Education";
 import { Footer } from "@/components/sections/Footer";
-import { StickyNav } from "@/components/StickyNav";
 
 export default function ResumePage() {
   return (
     <div className="min-h-screen bg-background font-sans">
-      <StickyNav />
       <main className="max-w-3xl mx-auto px-6 py-12 md:py-16 lg:py-20 print:p-0 print:m-0 print:max-w-none">
         <Header />
         <Summary />
